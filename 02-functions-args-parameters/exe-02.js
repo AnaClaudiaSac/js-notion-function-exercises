@@ -11,6 +11,10 @@ function greetUser(nome) {
 greetUser("Gabriel");
 greetUser("Anna");
 
+// Output:
+// Olá Gabriel! Seja bem-vindo!
+// Olá Anna! Seja bem-vindo!
+
 //------------------------------------------------------------------------------------
 
 // Exercício 2: Calcular o quadrado de um número
@@ -22,6 +26,9 @@ function squareNumber(numero) {
 }
 
 squareNumber(8);
+
+// Output:
+// 64
 
 //------------------------------------------------------------------------------------
 
@@ -35,7 +42,12 @@ function showAge(nome, idade) {
   console.log(`${nome} tem ${idade} anos.`);
 }
 
+showAge("Anna", "49");
 showAge("Gabriel", "29");
+
+// Output:
+// Anna tem 49 anos.
+// Gabriel tem 29 anos.
 
 //------------------------------------------------------------------------------------
 
@@ -49,13 +61,16 @@ function doubleValue(number) {
 
 doubleValue(8);
 
+// Output:
+// 16
+
 //------------------------------------------------------------------------------------
 
 // Exercício 5: Converter horas em minutos
 
 //5 - Crie uma função chamada `convertToMinutes` que recebe uma quantidade de **horas** como parâmetro e exibe no console a conversão desse valor para **minutos**.
 
-// **Fórmula:**
+// Fórmula:
 
 // `Minutos = Horas × 60`
 
@@ -66,6 +81,9 @@ function convertToMinutes(horas) {
 }
 
 convertToMinutes(2);
+
+// Output:
+// 120
 
 //-----------------------------------------------------------------------------------
 
@@ -79,6 +97,9 @@ function sumNumbers(number1, number2) {
 
 sumNumbers(2, 6);
 
+// Output:
+// 8
+
 //------------------------------------------------------------------------------------
 
 // Exercício 7: Multiplicar dois números
@@ -90,6 +111,9 @@ function multiplyNumbers(number1, number2) {
 }
 
 multiplyNumbers(2, 10);
+
+// Output:
+// 20
 
 //------------------------------------------------------------------------------------
 
@@ -105,13 +129,16 @@ function showTemperature(valor) {
 
 showTemperature(22);
 
+// Output:
+// A temperatura atual é 22°C.
+
 //------------------------------------------------------------------------------------
 
 // Exercício 9: Exibir uma mensagem de boas-vindas a um usuário e a sua cidade**
 
 //  9 - Crie uma função chamada `welcomeUser` que recebe um **nome** e uma **cidade** como parâmetros e exibe no console a mensagem:
 
-// `"Olá, [nome]! Como está o tempo em [cidade]?"`.
+//`"Olá, [nome]! Como está o tempo em [cidade]?"`.
 
 function welcomeUser(name, city) {
   console.log(`Olá ${name}! Como está o tempo em ${city}?`);
@@ -120,13 +147,17 @@ function welcomeUser(name, city) {
 welcomeUser("Anna", "São Paulo");
 welcomeUser("Gabriel", "São Paulo");
 
+// Output:
+// Olá Anna! Como está o tempo em São Paulo?
+// Olá Gabriel! Como está o tempo em São Paulo?
+
 //------------------------------------------------------------------------------------
 
 // Exercício 10: Calcular o tempo de viagem
 
 // 10 - Crie uma função chamada `travelTime` que recebe uma **distância (em km)** e uma **velocidade média (em km/h)** como parâmetros e exibe no console o tempo estimado de viagem em horas.
 
-// **Fórmula:**
+// Fórmula:
 
 // `Tempo = Distância ÷ Velocidade`
 
@@ -135,4 +166,7 @@ function travelTime(distancia, velocidade) {
   console.log(tempo);
 }
 
-travelTime(180, 80);
+travelTime(200, 80);
+
+// Output:
+// 2.5

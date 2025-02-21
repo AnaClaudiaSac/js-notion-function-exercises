@@ -1,4 +1,4 @@
-//   Exercício 11: Repetir uma mensagem**
+// Exercício 11: Repetir uma mensagem**
 
 // Crie uma função chamada `repeatMessage` que recebe uma **mensagem** e um **número** como parâmetros, e **retorna** a mensagem repetida o número de vezes especificado.
 
@@ -9,8 +9,12 @@ function repeatMessage(message, number) {
 }
 
 console.log(repeatMessage("Olá", 4));
+console.log(repeatMessage("Amo Gatos!", 8));
+// Output:
+// OláOláOláOlá
+// Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!
 
-//--------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------
 
 // Exercício 12: Retornar a primeira letra de uma palavra**
 
@@ -21,8 +25,13 @@ function firstLetter(palavra) {
 }
 
 console.log(firstLetter("Javascript"));
+console.log(firstLetter("Gatos"));
 
-//--------------------------------------------------------------------------------------
+// Output:
+// J
+// G
+
+//------------------------------------------------------------------------------------
 //  Exercício 13: Verificar se uma palavra contém uma letra específica**
 
 // Crie uma função chamada `containsLetter` que recebe uma **palavra** e uma **letra** como parâmetros, e **retorna** `true` se a palavra contém essa letra e `false` caso contrário.
@@ -36,13 +45,19 @@ console.log(containsLetter("Javascript", "g"));
 console.log(containsLetter("Anna", "a"));
 console.log(containsLetter("Gabriel", "a"));
 
-//--------------------------------------------------------------------------------------
+// Output:
+// true
+// false
+// true
+// true
+
+//------------------------------------------------------------------------------------
 
 // Exercício 14: Calcular a média de três números**
 
 // Crie uma função chamada `average` que recebe **três números** como parâmetros e **retorna** a média aritmética deles.
 
-// **Fórmula:**
+// Fórmula:
 
 // `Média = (Número1 + Número2 + Número3) ÷ 3`
 
@@ -58,7 +73,12 @@ const result = average(10, 10, 10);
 
 console.log("A média dos três numeros é:", result);
 
-//--------------------------------------------------------------------------------------
+// Output:
+//9
+//10
+//A média dos três numeros é: 10
+
+//------------------------------------------------------------------------------------
 
 // Exercício 15: Verificar se um ano é bissexto**
 
@@ -80,7 +100,13 @@ console.log(isLeapYear(1996));
 console.log(isLeapYear(2022));
 console.log(isLeapYear(2025));
 
-//--------------------------------------------------------------------------------------
+// Output:
+//false
+//true
+//false
+//false
+
+//------------------------------------------------------------------------------------
 
 // Exercício 17: Calcular o perímetro de um retângulo**
 
@@ -99,7 +125,11 @@ console.log(rectanglePerimeter(10, 10));
 const resul = rectanglePerimeter(10, 10);
 console.log("O perímetro do retângulo é:", resul);
 
-//--------------------------------------------------------------------------------------
+// Output:
+//40
+//O perímetro do retângulo é: 40
+
+//------------------------------------------------------------------------------------
 
 // Exercício 18: Contar quantos caracteres há em uma string**
 
@@ -115,7 +145,12 @@ console.log(countCharacters("Deus sempre nos ampara!"));
 const resp = countCharacters("Deus sempre nos ampara!");
 console.log(`A frase tem ${resp} caracteres!`);
 
-//--------------------------------------------------------------------------------------
+// Output:
+// 15
+// 23
+// A frase tem 23 caracteres!
+
+//------------------------------------------------------------------------------------
 
 // Exercício 19: Retornar o menor entre três números**
 
@@ -144,12 +179,17 @@ console.log(minNumber(2, 8, 10));
 
 // Math.max()
 
-// -------------------------------------------------------------------------------------
+// Output:
+// O numero 8 é o menor
+// O numero 6 é o menor
+// O número 2 é o menor
+
+// -----------------------------------------------------------------------------------
 // Exercício 20: Calcular a potência de um número**
 
 // Crie uma função chamada `power` que recebe **dois números**, base e expoente, como parâmetros e **retorna** o resultado da potenciação.
 
-// **Fórmula:**
+// Fórmula:
 
 // `Resultado = Base ^ Expoente`
 
@@ -163,3 +203,8 @@ console.log(power(5, 2));
 console.log(power(10, 0));
 
 // Math.pow()
+
+// Output
+// 8
+// 25
+// 1

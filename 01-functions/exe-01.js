@@ -8,6 +8,9 @@ function welcomeMessage() {
 
 welcomeMessage();
 
+/* Output:
+ Bem-vindo ao sistema!*/
+
 //------------------------------------------------------------------------------------
 
 // Exercício 2: Informar o dia da semana
@@ -19,6 +22,10 @@ function todayIs() {
 }
 
 todayIs();
+
+/* Output: 
+Hoje é um ótimo dia para aprender programação!
+*/
 
 //------------------------------------------------------------------------------------
 
@@ -32,6 +39,10 @@ function motivation() {
 
 motivation();
 
+/* Outuput:
+Nunca desista dos seus sonhos, continue estudando!
+*/
+
 //------------------------------------------------------------------------------------
 
 // Exercício 4: Aviso de manutenção
@@ -44,6 +55,9 @@ function maintenanceAlert() {
 
 maintenanceAlert();
 
+/* Output:
+Atenção! O sistema entrará em manutenção às 22h.
+*/
 //------------------------------------------------------------------------------------
 
 // Exercício 5: Mensagem de encerramento
@@ -56,12 +70,16 @@ function goodbyeMessage() {
 
 goodbyeMessage();
 
+/* Output:
+Obrigado por utilizar nosso sistema. Até logo!
+*/
+
 //------------------------------------------------------------------------------------
 
 // Output:
 
-// Bem-vindo ao sistema!
-// Hoje é um ótimo dia para aprender programação!
-// Nunca desista dos seus sonhos, continue estudando!
-// Atenção! O sistema entrará em manutenção as 22h.
-// Obrigado por utilizar nosso sistema. Até logo!
+// 1 - Bem-vindo ao sistema!
+// 2 - Hoje é um ótimo dia para aprender programação!
+// 3 - Nunca desista dos seus sonhos, continue estudando!
+// 4 - Atenção! O sistema entrará em manutenção as 22h.
+// 5 - Obrigado por utilizar nosso sistema. Até logo!

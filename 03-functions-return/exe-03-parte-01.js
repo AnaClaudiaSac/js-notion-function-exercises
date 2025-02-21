@@ -12,6 +12,9 @@ function greetUser(nome) {
 const teste = greetUser("Anna");
 console.log(teste);
 
+// Output:
+// Olá, Anna! Seja bem-vinda!
+
 //------------------------------------------------------------------------------------
 
 // Exercício 2: Calcular o triplo de um número
@@ -25,7 +28,7 @@ function tripleNumber(number) {
 
 console.log(tripleNumber(30));
 
-//************************************
+/************************************/
 
 function tripleNumber(numero) {
   return numero * 3;
@@ -34,7 +37,12 @@ function tripleNumber(numero) {
 console.log(tripleNumber(8));
 console.log(tripleNumber(10));
 
+// Output:
+// 24
+// 30
+
 //------------------------------------------------------------------------------------
+
 // Exercício 3: Verificar se um número é positivo**
 
 // 3 -  Crie uma função chamada `isPositive` que recebe um **número** como parâmetro e **retorna** `true` se o número for positivo e `false` se for negativo ou zero.
@@ -48,6 +56,12 @@ console.log(isPositive(10));
 console.log(isPositive(-9));
 console.log(isPositive(0));
 console.log(isPositive(8));
+
+// Output:
+// true
+// false
+// false
+// true
 
 //------------------------------------------------------------------------------------
 
@@ -69,6 +83,12 @@ function fullName(firstName, lastName) {
 }
 
 console.log(fullName("Anna", "Sacute"));
+console.log(fullName("Gabriel", "Gomes"));
+
+// Output:
+// Anna Sacute
+// Anna Sacute
+// Gabriel Gomes
 
 //------------------------------------------------------------------------------------
 
@@ -87,6 +107,11 @@ console.log(metersToCentimeters(1));
 console.log(metersToCentimeters(2));
 console.log(metersToCentimeters(8.8));
 
+// Output:
+// 100
+// 200
+// 880.0000000000001
+
 //------------------------------------------------------------------------------------
 // Exercício 16: Calcular o IMC (Índice de Massa Corporal)
 
@@ -104,7 +129,11 @@ function calculateIMC(peso, alt) {
 console.log(calculateIMC(60, 1.7));
 console.log(calculateIMC(70, 1.78));
 
-//------------------------------------------------------------------------------------------
+// Output:
+// 20.761245674740486
+// 22.093170054286073
+
+//------------------------------------------------------------------------------------
 
 // Exercício 7: Verificar se um número é par ou ímpar
 
@@ -118,7 +147,12 @@ console.log(isEven(12));
 console.log(isEven(7));
 console.log(isEven(22));
 
-//------------------------------------------------------------------------------------------
+// Output:
+// Par
+// Impar
+// Par
+
+//------------------------------------------------------------------------------------
 
 // Exercício 8: Converter dólares para reais
 
@@ -135,7 +169,11 @@ function convertToReal(dolares, cotaçãoDolar) {
 console.log(convertToReal(10, 6));
 console.log(convertToReal(80, 5.8));
 
-//--------------------------------------------------------------------------------------------
+// Output:
+// 60
+// 464
+
+//------------------------------------------------------------------------------------
 
 // Exercício 9: Calcular o tempo restante para aposentadoria
 
@@ -156,7 +194,13 @@ console.log(yearsToRetirement(70));
 console.log(yearsToRetirement(18));
 console.log(yearsToRetirement(65));
 
-//------------------------------------------------------------------------------------------
+// Output:
+// Faltam 17 anos para se aposentar
+// Você já pode se aposentar!
+// Faltam 47 anos para se aposentar
+// Você já pode se aposentar!
+
+//------------------------------------------------------------------------------------
 
 // Exercício 10: Retornar o maior entre dois números**
 
@@ -173,4 +217,7 @@ console.log(maxNumber(10, 80));
 
 // Eu poderia também fazer a comparação entre os dois números indicando qual era menor ou maior ou igual mas o exercício pede o retorno apenas do maior número.
 
-//--------------------------------------------------------------------------------------
+// Output:
+// O número 80 é maior
+
+//------------------------------------------------------------------------------------
