@@ -5,7 +5,7 @@
 // `"Olá, [nome]! Seja bem-vindo!"`.
 
 function greetUser(nome) {
-  let message = `Olá, ${nome}! Seja bem-vinda!`;
+  let message = `Olá, ${nome}! Seja bem-vindo(a)!`;
   return message;
 }
 
@@ -13,22 +13,13 @@ const teste = greetUser("Anna");
 console.log(teste);
 
 // Output:
-// Olá, Anna! Seja bem-vinda!
+// Olá, Anna! Seja bem-vindo(a)!
 
 //------------------------------------------------------------------------------------
 
 // Exercício 2: Calcular o triplo de um número
 
 // 2 - Crie uma função chamada `tripleNumber` que recebe um **número** como parâmetro e **retorna** o triplo desse número.
-
-function tripleNumber(number) {
-  let result = number * 3;
-  return result;
-}
-
-console.log(tripleNumber(30));
-
-/************************************/
 
 function tripleNumber(numero) {
   return numero * 3;
@@ -48,8 +39,7 @@ console.log(tripleNumber(10));
 // 3 -  Crie uma função chamada `isPositive` que recebe um **número** como parâmetro e **retorna** `true` se o número for positivo e `false` se for negativo ou zero.
 
 function isPositive(number) {
-  let result = number > 0;
-  return result;
+  return number > 0;
 }
 
 console.log(isPositive(10));
@@ -70,15 +60,6 @@ console.log(isPositive(8));
 // 4 - Crie uma função chamada `fullName` que recebe um **primeiro nome** e um **sobrenome** como parâmetros e **retorna** o nome completo.
 
 function fullName(firstName, lastName) {
-  const result = (firstName, lastName);
-  return result;
-}
-
-console.log(fullName("Anna", "Sacute"));
-
-//*******************************************
-
-function fullName(firstName, lastName) {
   return `${firstName} ${lastName}`;
 }
 
@@ -86,7 +67,6 @@ console.log(fullName("Anna", "Sacute"));
 console.log(fullName("Gabriel", "Gomes"));
 
 // Output:
-// Anna Sacute
 // Anna Sacute
 // Gabriel Gomes
 
@@ -99,9 +79,8 @@ console.log(fullName("Gabriel", "Gomes"));
 // Fórmula:
 // `Centímetros = Metros × 100`
 
-function metersToCentimeters(meters, value) {
-  let centimeters = meters * 100;
-  return centimeters;
+function metersToCentimeters(meters) {
+  return meters * 100;
 }
 console.log(metersToCentimeters(1));
 console.log(metersToCentimeters(2));
@@ -121,17 +100,16 @@ console.log(metersToCentimeters(8.8));
 
 // `IMC = Peso ÷ (Altura × Altura)`
 
-function calculateIMC(peso, alt) {
-  let imc = peso / (alt * alt);
-  return imc;
+function calculateIMC(weigth, height) {
+  return (weigth / (height * height)).toFixed(2);
 }
 
 console.log(calculateIMC(60, 1.7));
 console.log(calculateIMC(70, 1.78));
 
 // Output:
-// 20.761245674740486
-// 22.093170054286073
+// 20.76
+// 22.09
 
 //------------------------------------------------------------------------------------
 
@@ -140,7 +118,7 @@ console.log(calculateIMC(70, 1.78));
 //  7 - Crie uma função chamada `isEven` que recebe um **número** como parâmetro e **retorna** `"Par"` se o número for par ou `"Ímpar"` se for ímpar.
 
 function isEven(number) {
-  return number % 2 === 0 ? "Par" : "Impar";
+  return number % 2 === 0 ? "Par" : "Ímpar";
 }
 
 console.log(isEven(12));
@@ -149,7 +127,7 @@ console.log(isEven(22));
 
 // Output:
 // Par
-// Impar
+// Ímpar
 // Par
 
 //------------------------------------------------------------------------------------
@@ -161,9 +139,8 @@ console.log(isEven(22));
 // Fórmula:
 //`Reais = Dólares × Cotação`
 
-function convertToReal(dolares, cotaçãoDolar) {
-  let reais = dolares * cotaçãoDolar;
-  return reais;
+function convertToReal(dollars, exchangeRate) {
+  return dollars * exchangeRate;
 }
 
 console.log(convertToReal(10, 6));
@@ -179,13 +156,13 @@ console.log(convertToReal(80, 5.8));
 
 // 9 - Crie uma função chamada `yearsToRetirement` que recebe a **idade atual** de uma pessoa e **retorna** quantos anos faltam para ela se aposentar, considerando a idade mínima de **65 anos**.
 
-function yearsToRetirement(idadeAtual) {
-  const ageRemains = 65;
+function yearsToRetirement(currentAge) {
+  const retirementAge = 65;
 
-  if (idadeAtual >= ageRemains) {
+  if (currentAge >= retirementAge) {
     return "Você já pode se aposentar!";
   } else {
-    return `Faltam ${ageRemains - idadeAtual} anos para se aposentar`;
+    return `Faltam ${retirementAge - currentAge} anos para se aposentar.`;
   }
 }
 
@@ -209,15 +186,24 @@ console.log(yearsToRetirement(65));
 function maxNumber(number1, number2) {
   if (number1 > number2) {
     return `O número ${number1} é maior `;
-  } else number2 > number1;
-  return `O número ${number2} é maior`;
+  } else if (number2 > number1) {
+    return `O número ${number2} é maior`;
+  } else {
+    return "Os números são iguais";
+  }
 }
 
 console.log(maxNumber(10, 80));
+console.log(maxNumber(20, 20));
+console.log(maxNumber(40, 20));
+console.log(maxNumber(20, 88));
 
 // Eu poderia também fazer a comparação entre os dois números indicando qual era menor ou maior ou igual mas o exercício pede o retorno apenas do maior número.
 
 // Output:
 // O número 80 é maior
+// Os números são iguais
+// O número 40 é maior
+// O número 88 é maior
 
 //------------------------------------------------------------------------------------

@@ -10,6 +10,7 @@ function repeatMessage(message, number) {
 
 console.log(repeatMessage("Olá", 4));
 console.log(repeatMessage("Amo Gatos!", 8));
+
 // Output:
 // OláOláOláOlá
 // Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!Amo Gatos!
@@ -62,8 +63,7 @@ console.log(containsLetter("Gabriel", "a"));
 // `Média = (Número1 + Número2 + Número3) ÷ 3`
 
 function average(number1, number2, number3) {
-  const media = (number1 + number2 + number3) / 3;
-  return media.toFixed(0);
+  return (media = (number1 + number2 + number3) / 3).toFixed(2);
 }
 
 console.log(average(10, 8, 10));
@@ -117,8 +117,7 @@ console.log(isLeapYear(2025));
 // `Perímetro = 2 × (Largura + Altura)`
 
 function rectanglePerimeter(largura, altura) {
-  const perimetro = 2 * (largura + altura);
-  return perimetro;
+  return (perimetro = 2 * (largura + altura));
 }
 console.log(rectanglePerimeter(10, 10));
 
@@ -155,6 +154,7 @@ console.log(`A frase tem ${resp} caracteres!`);
 // Exercício 19: Retornar o menor entre três números**
 
 // Crie uma função chamada `minNumber` que recebe **três números** como parâmetros e **retorna** o menor deles.
+
 function minNumber(n1, n2, n3) {
   if (n1 <= n2 && n1 <= n3) {
     return `O número ${n1} é o menor `;
@@ -194,8 +194,7 @@ console.log(minNumber(2, 8, 10));
 // `Resultado = Base ^ Expoente`
 
 function power(base, expoente) {
-  const resposta = base ** expoente;
-  return resposta;
+  return base ** expoente;
 }
 
 console.log(power(2, 3));
