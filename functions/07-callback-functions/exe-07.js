@@ -69,7 +69,7 @@ console.log(result);
 // 11
 
 //---------------------------------------------------------------------------
-//Exercício 64: Criar uma função que processa um array com callback**
+//Exercício 4: Criar uma função que processa um array com callback**
 
 // Crie uma função chamada `processArray` que recebe um **array** e um **callback**.
 
@@ -99,3 +99,42 @@ console.log(processedNumbers);
 // 4
 // 5
 // [1, 2, 3, 4, 5, 6, 7, 8]
+
+//-------------------------------------------------------------------------------------------
+// Exercício 5: Criar uma função que filtra números pares usando callback
+
+// Crie uma função chamada `filterEvenNumbers` que recebe um **array de números** e um **callback**.
+
+// O callback deve receber um número e retornar `true` se for par.
+
+// Use essa função para retornar apenas os números pares do array.
+
+function filterEvenNumbers() {}
+
+// Exercício 5: Criar uma função que filtra números pares usando callback
+
+// Crie uma função chamada `filterEvenNumbers` que recebe um **array de números** e um **callback**.
+
+// O callback deve receber um número e retornar `true` se for par.
+
+// Use essa função para retornar apenas os números pares do array.
+function filterEvenNumbers(array, callback) {
+  let evenNumbers = [];
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i])) {
+      evenNumbers.push(array[i]);
+    }
+  }
+  return evenNumbers;
+}
+
+const number = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const isEven = (num) => num % 2 === 0;
+
+const evenNumbers = filterEvenNumbers(number, isEven);
+
+console.log(evenNumbers);
+
+// Output:
+// [ 2, 4, 6, 8 ]
