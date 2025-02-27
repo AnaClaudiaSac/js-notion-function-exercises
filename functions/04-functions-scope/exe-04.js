@@ -10,7 +10,8 @@ function showMessage() {
 }
 
 showMessage();
-//console.log(message);
+
+// console.log(message); // ❌ Erro! 'message' não está definida fora da função.
 
 // Resposta: fora da função o a variável não aparece no console.log()!
 //Só quando a função é chamada com ela dentro do escopo.
@@ -26,7 +27,7 @@ showMessage();
 
 // Depois, crie uma função chamada `showAppName` que exibe o valor da variável global no console.
 
-let appName = "rockmusicapp";
+let appName = "rockMusicApp";
 
 function showAppName() {
   console.log(appName);
@@ -34,7 +35,7 @@ function showAppName() {
 
 showAppName();
 
-// Output:rockmusicapp
+// Output:rockMusicApp
 
 //------------------------------------------------------------------------------------
 
@@ -50,7 +51,7 @@ let counter = 0;
 
 function increaseCounter() {
   counter++;
-  console.log("counter:", counter);
+  console.log(`O contador agora é: ${counter}`);
 }
 
 increaseCounter();
@@ -65,10 +66,11 @@ increaseCounter();
 // Para incrementar uma variável, basta colocar o operador "++" depois do nome da variável.
 
 // Output:
-// counter: 1
-// counter: 2
-// counter: 3
-// counter: 4
+// O contador agora é: 1
+// O contador agora é: 2
+// O contador agora é: 3
+// O contador agora é: 4
+//
 
 //--------------------------------------------------------------------------------------
 
@@ -85,16 +87,16 @@ increaseCounter();
 let message = "Olá do lado de fora!";
 
 function changeMessage() {
-  let message = "Olá de dentro";
-  console.log(message);
+  let message = "Olá de dentro!";
+  console.log("Dentro da função:", message);
 }
 
 changeMessage();
-console.log(message);
+console.log("Fora da função:", message);
 
 // Output:
-// Olá de dentro
-// Olá do lado de fora!
+// Dentro da função: Olá de dentro!
+// Fora da função Olá do lado de fora!
 
 //------------------------------------------------------------------------------------
 
@@ -107,15 +109,16 @@ console.log(message);
 // Chame `innerFunction` dentro de `outerFunction` e depois chame `outerFunction` no programa principal.
 
 function outerFunction() {
-  let externalMessage = "Olá dentro da primeira função lendo da outra função!";
+  let externalMessage = "Olá, sou a variável da função externa!";
+
   function innerFunction() {
     console.log(externalMessage);
   }
 
-  innerFunction();
+  innerFunction(); // Consegue acessar 'externalMessage'
 }
 
-outerFunction();
+outerFunction(); //❌ console.log(externalMessage); // Erro: 'externalMessage' não está definida fora de 'outerFunction'
 
 // 1 - Primeiro chama a função outerFunction()
 // 2 - let externalMessage = "Olá dentro da primeira função lendo da outra função"
@@ -123,7 +126,8 @@ outerFunction();
 // 4 - outerFunction()
 // 5 - Fim
 //
-// innerfunction está dentro da função outerFunction assim consegue acessar externalMessage
+// Output:
+// Olá, sou a variável da função externa!
 
 //--------------------------------------------------------------------------------------
 
@@ -136,11 +140,11 @@ outerFunction();
 // Teste `double(5)` e veja se retorna 10.
 
 function createMultiplier(number) {
-  function multiplie(num) {
+  function multiply(num) {
     return num * number;
   }
 
-  return multiplie;
+  return multiply;
 }
 
 let double = createMultiplier(4);
@@ -170,18 +174,16 @@ function convertToFahrenheit() {
   let temperature = 50;
   let fahrenheit = (temperature * 9) / 5 + 32;
 
-  console.log("Temperatura dentro da função (local)", temperature, "°C");
-  console.log("Temperatura convertida para Fahrenheit:", fahrenheit, "°C");
+  console.log(`Temperatura local: ${temperature}°C`);
+  console.log(`Temperatura convertida: ${fahrenheit}°F`);
 }
 
-console.log("variável global (fora da função)", temperature, "°C");
-
+console.log(`Temperatura global: ${temperature}°C`);
 convertToFahrenheit();
 
 // Output:
-// variável global (fora da função) 40 °C
-// Temperatura dentro da função (local) 50 °C
-// Temperatura convertida para Fahrenheit: 122 °C
+// Temperatura local: 50°C
+///Temperatura convertida: 122°F
 
 //------------------------------------------------------------------------------------
 
@@ -192,21 +194,15 @@ convertToFahrenheit();
 // O objeto deve ter as propriedades `name` e `age`.
 
 function createPerson(name, age) {
-  return {
-    name: name,
-    age: age,
-  };
+  return { name, age };
 }
-
-// name: "Anna",
-// age: 49,
-
-//console.log(createPerson())
 
 const person1 = createPerson("Anna", 49);
 const person2 = createPerson("Gabriel", 29);
-console.log(person1);
-console.log(person2);
+console.log(person1, person2);
+
+// Output:
+// { name: 'Anna', age: 49 } { name: 'Gabriel', age: 29 }
 
 //------------------------------------------------------------------------------------
 
@@ -235,11 +231,30 @@ function testScope() {
     console.log(msg2);
     console.log(msg3);
   }
+
+  {
+    let blockVar = "Sou do bloco!";
+    console.log("Dentro do bloco:");
+    console.log(blockVar);
+  }
+  // console.log(blockVar); // ❌ Erro: 'blockVar' está fora do escopo
 }
 
 testScope();
 
-//-----------------------------------------------------------------------------------------
+// Output:
+// Dentro da funçao:
+// Eu fui declarada com var
+// Eu fui declarada com let
+// Eu fui declarada com const
+// Dentro da bloco da função:
+// Eu fui declarada com var
+// Eu fui declarada com let
+// Eu fui declarada com const
+// Dentro do bloco:
+// Sou do bloco!
+
+//--------------------------------------------------------------------------------------
 
 // Exercício 10: Função que modifica um array global**
 
@@ -260,4 +275,12 @@ addTask("Estudar JavaScript");
 addTask("Fazer exercícios");
 addTask("Fazer café");
 
-console.log(tasks);
+console.log("Lista de tarefas:", tasks);
+
+// Output:
+// Lista de tarefas: [
+//   'Ver vídeo de aula JavaScript',
+//   'Estudar JavaScript',
+//   'Fazer exercícios',
+//   'Fazer café'
+// ]
