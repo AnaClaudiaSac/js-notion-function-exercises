@@ -434,3 +434,38 @@ console.log(filme.play());
 // Nos códigos
 // Erros de Português
 // Nomes das propriedades para inglês, tornando mais uniforme.
+
+//Resumo:
+
+// Funções construtoras são usadas para criar objetos em JavaScript.
+// Elas definem um "modelo" para criar múltiplos objetos com propriedades e métodos semelhantes.
+// A palavra-chave new é usada para chamar uma função construtora e criar um novo objeto.
+// Como Funcionam
+
+// Definição:
+// Uma função é definida para servir como construtor.
+// A palavra-chave this é usada dentro da função para se referir ao novo objeto que será criado.
+// Propriedades e métodos são atribuídos a this.
+// Criação de Objetos:
+// A palavra-chave new é usada seguida pelo nome da função construtora para criar um novo objeto.
+// Cada objeto criado terá as propriedades e métodos definidos na função construtora.
+// Pontos Importantes
+
+// Funções construtoras permitem criar objetos com estruturas semelhantes, promovendo a reutilização de código.
+// A palavra chave new é essencial para criar novas instancias de objetos.
+// A partir do ES6 o uso de classes se tornou mais comum, mas a função construtora ainda é muito importante para entender o funcionamento do javascript.
+// Por convenção, nomes de funções construtoras começam com letra maiúscula.
+// Exemplo Básico
+
+// JavaScript
+
+// function Pessoa(nome, idade) {
+//   this.nome = nome;
+//   this.idade = idade;
+//   this.dizerOla = function() {
+//     console.log(`Olá, meu nome é ${this.nome}.`);
+//   };
+// }
+
+// const pessoa1 = new Pessoa("Alice", 30);
+// pessoa1.dizerOla(); // Saída: Olá, meu nome é Alice.
