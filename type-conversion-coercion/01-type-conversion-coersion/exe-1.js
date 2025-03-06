@@ -27,6 +27,7 @@ console.log(stringToNumber("22"));
 console.log(stringToNumber("8"));
 
 // Output:
+// string
 // 22
 // 8
 
@@ -131,6 +132,8 @@ console.log(multiplyStringNumber(8, "2"));
 // Output:
 // NaN
 // 64
+// 8
+// 16
 
 //-----------------------------------------------------------------------------------
 
@@ -234,14 +237,41 @@ console.log(compareValues(0, false));
 console.log(compareValues(1, true));
 console.log(compareValues(true, true));
 
-// Output
-// true
-// false
-// true
-// false
-// false
-// false
-// true
+// Output:
+// Comparando: 5 e 5
+// == : true
+// === : true
+// ------------------------
+// undefined
+// Comparando: 5 e 5
+// == : true
+// === : false
+// ------------------------
+// undefined
+// Comparando: 8 e 8
+// == : true
+// === : true
+// ------------------------
+// undefined
+// Comparando: null e undefined
+// == : true
+// === : false
+// ------------------------
+// undefined
+// Comparando: 0 e false
+// == : true
+// === : false
+// ------------------------
+// undefined
+// Comparando: 1 e true
+// == : true
+// === : false
+// ------------------------
+// undefined
+// Comparando: true e true
+// == : true
+// === : true
+// ------------------------
 
 // Correção:
 // A função original não faz a verificação corretamente, pois só retorna true se os dois operadores forem iguais para == e ===.
