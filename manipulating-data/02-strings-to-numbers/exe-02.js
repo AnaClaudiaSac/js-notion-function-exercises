@@ -298,7 +298,7 @@ console.log(concatNumberString(40, "º graus"));
 // Concatenar números e strings em JavaScript é o processo de combinar valores numéricos e textuais em uma única string.
 // Quando você usa o operador + com um número e uma string, o JavaScript converte automaticamente o número em uma string e, em seguida, as duas strings são combinadas.
 
-//--------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------
 
 // Exercício 10: Contar quantos números existem em uma string
 // Crie uma função chamada countNumbersInString que recebe uma string e conta quantos números existem nela.
