@@ -7,6 +7,8 @@ function upperCase(word) {
 
 console.log(upperCase("eu me chamo anna"));
 // Output: EU ME CHAMO ANNA
+
+//-------------------------------**********--------------------------------
 function loweCase(word) {
   return word.toLowerCase();
 }
