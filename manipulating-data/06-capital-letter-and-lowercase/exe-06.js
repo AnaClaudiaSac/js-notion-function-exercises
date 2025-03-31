@@ -43,3 +43,5 @@ console.log(loweCase("MEU NOME É ANNA"));
 // CSS:
 // Para fins de exibição, o CSS também oferece a propriedade text-transform, que pode ser usada para alterar a caixa de texto sem modificar a string original.
 // Em resumo, JavaScript fornece métodos poderosos para manipular letras maiúsculas e minúsculas, permitindo que os desenvolvedores controlem a formatação e a comparação de strings de forma eficaz.
+
+// Finalizado
