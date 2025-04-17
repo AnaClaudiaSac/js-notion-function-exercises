@@ -295,10 +295,8 @@ function replaceItem() {
   myArrayFruit = ["maçã", "uva", "banana"];
   const FruitReplace = "morango";
 
-  // Encontrar o índice do item "uva" no array
   const index = myArrayFruit.indexOf("uva");
 
-  // Se "uva" for encontrado, substituir pelo "morango"
   if (index !== -1) {
     myArrayFruit[index] = FruitReplace;
   }
