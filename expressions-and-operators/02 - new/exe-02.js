@@ -70,7 +70,10 @@ function newCar() {
   return car;
 }
 
-console.log(newCar());
+// console.log(newCar());
+
+// Output:
+// { brand: 'Toyota', model: 'Corolla' }
 
 //---------------------------------------------------------------------------------------
 
