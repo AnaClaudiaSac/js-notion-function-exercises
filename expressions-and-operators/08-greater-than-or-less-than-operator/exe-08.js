@@ -160,6 +160,3 @@ console.log(isHot(18));
 // false
 // true
 // false
-
-console.log(isHot(32)); // true
-console.log(isHot(25)); // false
