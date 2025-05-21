@@ -52,136 +52,95 @@ console.log(isStrictNotEqual("Javascript", "Javali"));
 
 //---------------------------------------------------------------------------------------------
 
-// Exercício 4: Verificar se uma nota é menor ou igual a 5
-// Crie uma função chamada isLowGrade que recebe uma nota e retorna true se for menor ou igual a 5.
+// Exercício 4: Comparar booleano com número usando ===
+// Crie uma função chamada compareBooleanNumber que compara true === 1 e retorna o resultado.
 
-function isLowGrade(notice) {
-  return notice <= 5;
+function compareBooleanNumber() {
+  return true === 1;
 }
 
-console.log(isLowGrade(4)); // true
-console.log(isLowGrade(6)); // false
-console.log(isLowGrade(5));
-console.log(isLowGrade(8));
+console.log(compareBooleanNumber()); // false
 
-// Output:
-// true
-// false
-// true
-// false
+//Output:
+//false
 
 //---------------------------------------------------------------------------------------------
 
-// Exercício 5: Verificar se dois valores são iguais ou não com >= e <=
-// Crie uma função chamada isEqualOrMore que retorna true se 10 >= 10.
+// Exercício 5: Comparar dois valores do mesmo tipo com !==
+// Crie uma função chamada sameTypeDifferentValue que compara 7 !== 8.
 
-function isEqualOrMore() {
-  return 10 >= 10;
+function sameTypeDifferentValue() {
+  return 7 !== 8;
 }
 
-console.log(isEqualOrMore());
+console.log(sameTypeDifferentValue());
 
 // Output:
 // true
 
 //---------------------------------------------------------------------------------------------
 
-// Exercício 6: Verificar se um número está abaixo de 100
-// Crie uma função chamada isBelow100 que recebe um número e retorna true se for menor que 100.
+// Exercício 6: Verificar se null é estritamente igual a undefined
+// Crie uma função chamada nullStrictCheck que retorna o resultado de null === undefined.
 
-function isBelow100(number) {
-  return number < 100;
+function nullStrictCheck() {
+  return null === undefined;
 }
 
-console.log(isBelow100(99));
-console.log(isBelow100(100));
-console.log(isBelow100(102));
-console.log(isBelow100(88));
+console.log(nullStrictCheck());
 
-// Output;
-// true
+// Output:
 // false
-// false
-// true
 
 //---------------------------------------------------------------------------------------------
 
-// Exercício 7: Verificar se um número está acima de 50
-// Crie uma função chamada isAbove50 que recebe um número e retorna true se for maior que 50.
+// Exercício 7: Comparar duas strings exatamente iguais com ===
+// Crie uma função chamada compareTextsStrict que compara "javascript" === "javascript".
 
-function isAbove50(number) {
-  return number > 50;
+function compareTextsStrict() {
+  return "javascript" === "javascript";
 }
 
-console.log(isAbove50(51));
-console.log(isAbove50(50));
-console.log(isAbove50(48));
-console.log(isAbove50(82));
+console.log(compareTextsStrict());
 
 // Output:
 // true
-// false
-// false
-// true
 
 //---------------------------------------------------------------------------------------------
 
-// Exercício 8: Verificar se uma pessoa pode votar
-// Crie uma função chamada canVote que recebe a idade e retorna true se a idade for maior ou igual a 16.
+// Exercício 8: Comparar uma variável number com uma string numérica usando !==
+// Crie uma função chamada strictNotEqualExample que compara 20 !== "20".
 
-function canVote(age) {
-  return age >= 16;
+function strictNotEqualExample() {
+  return 20 !== "20";
 }
 
-console.log(canVote(18));
-console.log(canVote(15));
-console.log(canVote(12));
-console.log(canVote(22));
+console.log(strictNotEqualExample()); // true
 
 // Output:
 // true
-// false
-// false
-// true
 
 //---------------------------------------------------------------------------------------------
 
-// Exercício 9: Verificar se o número de tentativas é menor ou igual a 3
-// Crie uma função chamada canTryAgain que recebe um número de tentativas e retorna true se for menor ou igual a 3.
+// Exercício 9: Verificar se duas variáveis booleanas são estritamente iguais
+// Crie uma função chamada booleanStrictCompare que compara true === false.
 
-function canTryAgain(number) {
-  return number <= 3;
+function booleanStrictCompare() {
+  return true === false;
 }
 
-console.log(canTryAgain(2)); // true
-console.log(canTryAgain(5)); // false
-console.log(canTryAgain(8));
-console.log(canTryAgain(2));
+console.log(booleanStrictCompare()); // false
 
-// Output:
-// true
-// false
-// false
-// true
+//-------------------------------------------------------------------------------------------
 
-//---------------------------------------------------------------------------------------------
+// Exercício 10: Verificar se dois valores do mesmo tipo e valor são estritamente diferentes
+// Crie uma função chamada sameTypeSameValue que compara 100 !== 100.
 
-// Exercício 10: Verificar se a temperatura está acima de 30 graus
-// Crie uma função chamada isHot que recebe a temperatura e retorna true se for maior que 30.
-
-function isHot(temperature) {
-  return temperature > 30;
+function sameTypeSameValue() {
+  return 100 !== 100;
 }
 
-console.log(isHot(32)); // true
-console.log(isHot(25)); // false
-console.log(isHot(40));
-console.log(isHot(18));
+console.log(sameTypeSameValue());
 
 // Output:
-// true
 // false
-// true
-// false
-
-//---------------------------------------------------------------------------------------------
