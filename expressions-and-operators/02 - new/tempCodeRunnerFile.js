@@ -1,0 +1,1 @@
+// Criando objetos (instâncias) da função construtora Pessoa usando 'new'
