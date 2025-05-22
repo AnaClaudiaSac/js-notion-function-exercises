@@ -157,7 +157,7 @@ function studentInfo() {
   return name;
 }
 
-console.log(studentInfo()); // "Lucas tem 20 anos"
+console.log(studentInfo());
 
 // Output:
 // Lucas tem 20 anos
