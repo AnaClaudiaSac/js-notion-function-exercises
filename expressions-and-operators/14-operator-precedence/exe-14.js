@@ -21,7 +21,7 @@ function groupedSumFirst() {
 
 console.log(groupedSumFirst());
 
-// Output;
+// Output:
 // 16;
 
 //---------------------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ function logicalComparison() {
 
 console.log(logicalComparison());
 
-//Output
+//Output:
 // false
 
 //---------------------------------------------------------------------------------------------
