@@ -100,7 +100,7 @@ console.log(processedNumbers);
 // 5
 // [1, 2, 3, 4, 5, 6, 7, 8]
 
-//-------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
 // Exercício 5: Criar uma função que filtra números pares usando callback
 
 // Crie uma função chamada `filterEvenNumbers` que recebe um **array de números** e um **callback**.
@@ -138,3 +138,87 @@ console.log(evenNumbers);
 
 // Output:
 // [ 2, 4, 6, 8 ]
+
+//--------------------------------------------------------------------------------------
+// Exercício 6: Criar uma função que executa uma operação matemática com callback**
+
+// Crie uma função chamada `calculate` que recebe **dois números** e um **callback** que pode ser uma operação matemática (soma, subtração, multiplicação, divisão).
+
+// Teste chamando `calculate(10, 5, soma)`, `calculate(10, 5, multiplicação)`, etc.
+
+// Exercício 6: Criar uma função que executa uma operação matemática com callback**
+
+// Crie uma função chamada `calculate` que recebe **dois números** e um **callback** que pode ser uma operação matemática (soma, subtração, multiplicação, divisão).
+
+// Teste chamando `calculate(10, 5, soma)`, `calculate(10, 5, multiplicação)`, etc.
+
+function calculate(num1, num2, callBack) {
+  return callBack(num1, num2);
+}
+
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+function division(num1, num2) {
+  if (num2 === 0) {
+    return;
+  }
+  return num1 / num2;
+}
+
+const result1 = calculate(2, 2, sum);
+console.log(result1);
+
+const result2 = calculate(10, 8, subtract);
+console.log(result2);
+
+const result3 = calculate(8, 6, multiply);
+console.log(result3);
+
+const result4 = calculate(10, 5, division);
+console.log(result4);
+
+//Output:
+// 4
+// 2
+// 48
+// 2
+
+//--------------------------------------------------------------------------------------
+
+// Exercício 68: Criar uma função que executa um callback após um tempo**
+
+// Crie uma função chamada `delayedExecution` que recebe um **callback** e um **tempo em milissegundos**.
+
+// A função deve usar `setTimeout` para chamar o callback após o tempo especificado.
+
+function delayedExecution(time, callBack) {}
+
+//--------------------------------------------------------------------------------------
+
+// Exercício 9: Criar uma função que formata nomes com callback**
+
+// Crie uma função chamada `formatName` que recebe um **nome completo** e um **callback**.
+
+// O callback pode retornar o nome em letras maiúsculas, apenas com as iniciais, ou invertido.
+
+function formatName(fullName, callBack) {}
+
+//--------------------------------------------------------------------------------------
+
+// Exercício 10: Criar uma função que ordena um array usando um callback**
+
+// Crie uma função chamada `sortArray` que recebe um **array de números** e um **callback** que define a ordem de classificação (crescente ou decrescente).
+
+// O callback deve ser passado para a função `sort()`.
+
+function sortArray() {}
