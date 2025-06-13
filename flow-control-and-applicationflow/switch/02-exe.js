@@ -400,3 +400,7 @@ function turnoSaudacao(letter) {
 
 console.log(turnoSaudacao("M"));
 console.log(turnoSaudacao("B"));
+
+// Output:
+// Bom dia!
+// Turno inválido
