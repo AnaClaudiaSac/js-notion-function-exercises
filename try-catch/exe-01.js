@@ -135,6 +135,9 @@ try {
   console.log(e);
 }
 
+// Output:
+// Usuário não autorizado
+
 //---------------------------------------------------------------------------------------------
 // Exercício 7: Validar senha
 // Crie uma função validatePassword(password) que lança um erro se a senha tiver menos de 6 caracteres.
