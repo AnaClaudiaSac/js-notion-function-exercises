@@ -181,7 +181,6 @@ for (let i = 1; i <= 10; i++) {
 
 let palavra = "javascript";
 for (let i = 0; i < palavra.length; i++) {
-  //palavra.length retorna o número total de caracteres na string.
   console.log(palavra[i]);
 }
 
