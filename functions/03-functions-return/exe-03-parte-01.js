@@ -21,8 +21,8 @@ console.log(teste);
 
 // 2 - Crie uma função chamada `tripleNumber` que recebe um **número** como parâmetro e **retorna** o triplo desse número.
 
-function tripleNumber(numero) {
-  return numero * 3;
+function tripleNumber(number) {
+  return number * 3;
 }
 
 console.log(tripleNumber(8));
